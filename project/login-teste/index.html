@@ -7,7 +7,7 @@
         /*Estilos para o corpo*/
         body{
             font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            background-color: aliceblue;
+            background-color: rgb(15, 143, 255);
             display: grid;
             place-items: center;
             height: 100vh;
@@ -17,12 +17,14 @@
         /*Estilos para o formulário*/
         .formulario{
             text-align: center;
-            background-color: rgb(218, 216, 209);
+            background-color: rgb(54, 70, 250);
             min-width: 200px;
+            width: 300px;
             padding: 50px;
             display: grid;
             box-shadow: 3px 3px 10px black;
             border: 2px solid rgba(0, 0, 0, 0.586);
+            border-radius: 50px;
         }
         /*Estilos para o título*/
         h1{
@@ -30,23 +32,28 @@
         }
         /*Estilos para a legenda dos inputs*/
         label{
+            font-size: 20px;
             margin-top: 10px;
             margin-bottom: 5px;
         }
         input{
+            width: 200px;
             margin: auto;
+            border-radius: 10px;
+            padding: 10px;
         }
         /*Estilos para o botão de enviar*/
         #envio{
+            width: 100px;
             font-weight: bold;
             margin-top: 20px;
-            background-color: antiquewhite;
+            background-color:rgb(2, 92, 170);
+            color: aliceblue;
             border-radius: 10px;
+            box-shadow: 0px 2px 9px black;
         }
         /*muda a cor e algumas outras coisas quando o ponteiro passa sobre o botão*/
         #envio:hover{
-            background-color:rgba(35, 35, 220, 0.955);
-            color: #fff;
             cursor: pointer;
         }
     </style>
@@ -55,8 +62,8 @@
 <body>
     <form action="" class="formulario">
         <h1>Login</h1>
-        <label for="texto">E-mail:</label>
-        <input type="email" name="texto" id="texto" placeholder="Insira seu e-mail" required>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required>
         <label for="senha">Senha:</label>
         <input type="password" name="senha" id="senha" placeholder="Insira sua senha" required>
         

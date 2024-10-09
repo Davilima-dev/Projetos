@@ -20,24 +20,27 @@
             max-width: 500px;
             padding: 50px;
             display: grid;
-            h1{
-                font-size: 50px;
-            }
-            label{
-                margin-top: 10px;
-                margin-bottom: 5px;
-            }
-            input{
-                margin: auto;
-            }
-            boton input{
-                margin-top: 20px;
-                background-color: antiquewhite;
-                border-radius: 10px;
-            }
-            boton input:hover{
-                cursor: pointer;
-            }
+        }
+        h1{
+            font-size: 50px;
+        }
+        label{
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        input{
+            margin: auto;
+        }
+        #envio{
+            font-weight: bold;
+            margin-top: 20px;
+            background-color: antiquewhite;
+            border-radius: 10px;
+        }
+        #envio:hover{
+            background-color:rgba(35, 35, 220, 0.955);
+            color: #fff;
+            cursor: pointer;
         }
     </style>
     <title>Login</title>
@@ -49,10 +52,8 @@
         <input type="email" name="texto" id="texto" placeholder="Insira seu e-mail" required>
         <label for="senha">Senha:</label>
         <input type="password" name="senha" id="senha" placeholder="Insira sua senha" required>
-
-        <boton>
-            <input type="submit" value="Enviar">
-        </boton>
+        
+        <input type="submit" value="Enviar" id="envio">
     </form>
 </body>
 </html>

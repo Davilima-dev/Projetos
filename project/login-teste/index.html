@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /*Estilos para o corpo*/
         body{
             font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             background-color: aliceblue;
@@ -13,16 +14,21 @@
             overflow: hidden;
             margin: auto;
         }
-        form{
+        /*Estilos para o formulário*/
+        .formulario{
             text-align: center;
             background-color: rgb(218, 216, 209);
             min-width: 200px;
             padding: 50px;
             display: grid;
+            box-shadow: 3px 3px 10px black;
+            border: 2px solid rgba(0, 0, 0, 0.586);
         }
+        /*Estilos para o título*/
         h1{
             font-size: 50px;
         }
+        /*Estilos para a legenda dos inputs*/
         label{
             margin-top: 10px;
             margin-bottom: 5px;
@@ -30,12 +36,14 @@
         input{
             margin: auto;
         }
+        /*Estilos para o botão de enviar*/
         #envio{
             font-weight: bold;
             margin-top: 20px;
             background-color: antiquewhite;
             border-radius: 10px;
         }
+        /*muda a cor e algumas outras coisas quando o ponteiro passa sobre o botão*/
         #envio:hover{
             background-color:rgba(35, 35, 220, 0.955);
             color: #fff;
@@ -45,7 +53,7 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="">
+    <form action="" class="formulario">
         <h1>Login</h1>
         <label for="texto">E-mail:</label>
         <input type="email" name="texto" id="texto" placeholder="Insira seu e-mail" required>

@@ -16,18 +16,19 @@
         }
         /*Estilos para o formulário*/
         .formulario{
-            text-align: center;
             background-color: rgb(54, 70, 250);
             min-width: 200px;
             max-width: 400px;
             padding: 50px;
-            display: grid;
+            display: flex;
+            flex-direction: column;
             box-shadow: 3px 3px 10px black;
             border: 2px solid rgba(0, 0, 0, 0.586);
-            border-radius: 50px;
+            border-radius: 20px;
         }
         /*Estilos para o título*/
         h1{
+            text-align: center;
             font-size: 50px;
         }
         /*Estilos para a legenda dos inputs*/
@@ -39,7 +40,7 @@
         input{
             width: 200px;
             margin: auto;
-            border-radius: 10px;
+            border-radius: 15px;
             padding: 10px;
         }
         /*Estilos para o botão de enviar*/
@@ -63,9 +64,9 @@
     <form action="" class="formulario">
         <h1>Login</h1>
         <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required>
+        <input type="email" name="email" id="email" placeholder="Digite aqui..." required>
         <label for="senha">Senha:</label>
-        <input type="password" name="senha" id="senha" placeholder="Insira sua senha" required>
+        <input type="password" name="senha" id="senha" placeholder="Digite aqui..." required>
         
         <input type="submit" value="Enviar" id="envio">
     </form>

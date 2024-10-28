@@ -7,68 +7,61 @@
         /*Estilos para o corpo*/
         body{
             font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            background-color: rgb(15, 143, 255);
+            background-color: rgb(158, 193, 223);
             display: grid;
-            place-items: center;
             height: 100vh;
             overflow: hidden;
-            margin: auto;
         }
         /*Estilos para o formulário*/
         .formulario{
-            background-color: rgb(54, 70, 250);
-            min-width: 200px;
+            background-color: rgba(54, 70, 243, 0.943);
+            min-width: 100px;
             max-width: 400px;
-            padding: 50px;
+            padding: 30px;
+            margin: auto;
             display: flex;
             flex-direction: column;
             box-shadow: 3px 3px 10px black;
             border: 2px solid rgba(0, 0, 0, 0.586);
             border-radius: 20px;
-        }
-        /*Estilos para o título*/
-        h1{
-            text-align: center;
-            font-size: 50px;
-        }
-        /*Estilos para a legenda dos inputs*/
-        label{
-            font-size: 20px;
-            margin-top: 10px;
-            margin-bottom: 5px;
+            align-items: center;
         }
         input{
-            width: 200px;
-            margin: auto;
-            border-radius: 15px;
-            padding: 10px;
+            width: 100%;
+            margin-top: 5px;
+            border-radius: 5px;
+            padding: 15px;
+            opacity: 0.8;
         }
         /*Estilos para o botão de enviar*/
         #envio{
-            width: 100px;
+            width: 100%;
             font-weight: bold;
+            text-transform: uppercase;
             margin-top: 20px;
-            background-color:rgb(2, 92, 170);
-            color: aliceblue;
-            border-radius: 10px;
-            box-shadow: 0px 2px 9px black;
+            background-color:rgba(134, 158, 180, 0.392);
+            color: #fff;
+            border-radius: 5px;
         }
         /*muda a cor e algumas outras coisas quando o ponteiro passa sobre o botão*/
         #envio:hover{
             cursor: pointer;
+        }
+        img{
+            width: 50px;
+            border-radius: 50px;
+            padding: 10px;
         }
     </style>
     <title>Login</title>
 </head>
 <body>
     <form action="" class="formulario">
-        <h1>Login</h1>
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email" placeholder="Digite aqui..." required>
-        <label for="senha">Senha:</label>
-        <input type="password" name="senha" id="senha" placeholder="Digite aqui..." required>
+        <img src="../image/icon_perfil.png" alt="">
+        <input type="email" name="email" id="email" placeholder="E-mail" required>
+        <input type="password" name="senha" id="senha" placeholder="Senha" required>
         
-        <input type="submit" value="Enviar" id="envio">
+        <input type="submit" value="Login" id="envio">
     </form>
 </body>
 </html>

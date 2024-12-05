@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #item{
+            display: none;
+            border: 1px solid;
+            width: 50%;
+        }
+        #delete{
+            display: none;
+        }
+    </style>
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+    <input type="text" name="lista" id="lista">
+    <button onclick="add()" id="add">Adicionar</button>
+    <div id="item">
+        <input type="checkbox" name="list" id="list">
+        <label id="label" for="list">LIsta</label>
+        <button onclick="deletar()" id="delete">Deletar</button>
+    </div>
+    <script>
+        function add(){
+            let lista = document.getElementById('lista').value;
+            let item = document.getElementById('item');
+            item.style.display = 'block';
+            document.getElementById('label').innerHTML = lista;
+            document.getElementById('delete').style.display = 'block'
+
+            if (lista.length == label){
+                console.log("erro");
+            }else{
+                document.getElementById('label').innerHTML = lista;
+                document.getElementById('delete').style.display = 'block'
+            }
+        }
+        function deletar(){
+            document.getElementById('item').style.display = 'none'
+            document.getElementById('delete').style.display = 'none'
+        }
+    </script>
+</body>
+</html>
